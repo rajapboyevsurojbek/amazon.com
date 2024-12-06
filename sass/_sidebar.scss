@@ -1,0 +1,47 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -365px;
+  width: 365px;
+  background: #fff;
+  transition: all 0.7s ease;
+  overflow: scroll;
+  height: 100vh;
+
+  &__sign {
+    background: #232f3e;
+    color: #fff;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding-left: 20px;
+    gap: 10px;
+  }
+  &__btn {
+    position: absolute;
+    right: 10px;
+    background: inherit;
+    i {
+      font-size: 30px;
+    }
+  }
+  &__wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+    li {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+.sidebar.show {
+  left: 0;
+  transition: all 0.7s ease;
+}

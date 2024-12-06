@@ -1,0 +1,12 @@
+.panel {
+  background: #085749;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+
+  &__sidebar {
+    cursor: pointer;
+  }
+}

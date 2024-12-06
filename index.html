@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!---------- Header ---------->
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__left">
+          <a href="#">
+            <img src="./assets/amazon.png" width="113px" alt="amazon" />
+          </a>
+          <div>
+            <div class="navbar__location-icon">
+              <i class="fa-solid fa-location-dot" style="color: #ffffff"></i>
+            </div>
+            <div class="navbar__location-glow" onclick="showLocation()">
+              <p>Deliver to</p>
+              <p>Uzbekistan</p>
+            </div>
+          </div>
+        </div>
+        <div class="navbar__center">
+          <form class="navbar__form">
+            <select name="category" id="category">
+              <option value="1">All</option>
+              <option value="1">All Departments</option>
+              <option value="2">Arts & Crafts</option>
+              <option value="3">Automotive</option>
+              <option value="4">Baby</option>
+              <option value="6">Beauty & Personal Care</option>
+              <option value="6">Books</option>
+            </select>
+            <input
+              class="navbar__search"
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search Amazon"
+            />
+            <button>
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="color: #ffffff"
+              ></i>
+            </button>
+          </form>
+        </div>
+        <div class="navbar__right">
+          <div class="navbar__language">
+            <img src="./assets/united-states.png" width="21px" alt="flag" />
+            <span>EN</span>
+          </div>
+          <div class="navbar__sign">
+            <p>Hello, sign in</p>
+            <p>Account & Lists</p>
+          </div>
+          <div class="navbar__orders">
+            <p>Returns</p>
+            <p>& Orders</p>
+          </div>
+          <div class="navbar__cart">
+            <i
+              class="fa-solid fa-cart-shopping fa-xl"
+              style="color: #ffffff"
+            ></i>
+            <p>Cart</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!---------- Panel ---------->
+    <section class="panel">
+      <div class="panel__sidebar" onclick="showSidebar()">
+        <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+        <span>All</span>
+      </div>
+
+      <a href="#">Today's Deals</a>
+      <a href="#">Customer Service</a>
+      <a href="#">Registry</a>
+      <a href="#">Gift Cards</a>
+      <a href="#">Sell</a>
+    </section>
+    <main>
+      <!---------- Hero ---------->
+      <div class="hero container">
+        <div class="hero__wrapper">
+          <div class="hero__card">
+            <h3 class="hero__card-title">Shop for your home essentials</h3>
+            <div class="hero__card-wrapper">
+              <div>
+                <img src="./assets/crad1.jpg" alt="card" />
+                <p>Cleaning tools</p>
+              </div>
+              <div>
+                <img src="./assets/card4.jpg" alt="card" />
+                <p>Cleaning tools</p>
+              </div>
+              <div>
+                <img src="./assets/card5.jpg" alt="card" />
+                <p>Cleaning tools</p>
+              </div>
+              <div>
+                <img src="./assets/card6.jpg" alt="card" />
+                <p>Cleaning tools</p>
+              </div>
+              <a class="hero__shop" href="#">Discover more in Home</a>
+            </div>
+          </div>
+          <div class="hero__card">
+            <h3 class="hero__card-title">Small gifts under $20</h3>
+            <div class="hero__card-wrapper">
+              <div>
+                <img width="500px" src="./assets/card0.jpg" alt="card" />
+                <p>Cleaning tools</p>
+              </div>
+              <a class="hero__shop" href="#">Shop Now</a>
+            </div>
+          </div>
+          <div class="hero__card">
+            <h3 class="hero__card-title">Shop for your home essentials</h3>
+            <div class="hero__card-wrapper">
+              <div>
+                <img src="./assets/card8.jpg" alt="card" />
+                <p>Cleaning tools</p>
+              </div>
+              <a class="hero__shop" href="#">Shop Now</a>
+            </div>
+          </div>
+          <div class="hero__card">
+            <h3 class="hero__card-title">Delightful deals for everyone</h3>
+            <div class="hero__card-wrapper">
+              <div>
+                <img src="./assets/card9.jpg" alt="card" />
+                <p>Cleaning tools</p>
+              </div>
+              <a class="hero__shop" href="#">Shop Now</a>
+            </div>
+          </div>
+          <div class="hero__card">
+            <h3 class="hero__card-title">Shop for your home essentials</h3>
+            <div class="hero__card-wrapper">
+              <div>
+                <img src="./assets/card14.jpg" alt="card" />
+                <p>Cleaning tools</p>
+              </div>
+              <a class="hero__shop" href="#">Shop Now</a>
+            </div>
+          </div>
+          <div class="hero__card">
+            <h3 class="hero__card-title">Shop for your home essentials</h3>
+            <div class="hero__card-wrapper">
+              <div>
+                <img src="./assets/card15.jpg" alt="card" />
+                <p>Cleaning tools</p>
+              </div>
+              <a class="hero__shop" href="#">Shop Now</a>
+            </div>
+          </div>
+          <div class="hero__card">
+            <h3 class="hero__card-title">Shop for your home essentials</h3>
+            <div class="hero__card-wrapper">
+              <div>
+                <img src="./assets/card9.jpg" alt="card" />
+                <p>Cleaning tools</p>
+              </div>
+              <a class="hero__shop" href="#">Shop Now</a>
+            </div>
+          </div>
+          <div class="hero__card">
+            <h3 class="hero__card-title">Shop for your home essentials</h3>
+            <div class="hero__card-wrapper">
+              <div>
+                <img src="./assets/card1.jpg" alt="card" />
+                <p>Cleaning tools</p>
+              </div>
+              <div>
+                <img src="./assets/card11.jpg" alt="card" />
+                <p>Cleaning tools</p>
+              </div>
+              <div>
+                <img src="./assets/card12.jpg" alt="card" />
+                <p>Cleaning tools</p>
+              </div>
+              <div>
+                <img src="./assets/card13.jpg" alt="card" />
+                <p>Cleaning tools</p>
+              </div>
+              <a class="hero__shop" href="#">Discover more in Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------- Sidebar ---------->
+      <div class="sidebar">
+        <div class="sidebar__sign">
+          <i class="fa-solid fa-user fa-xl" style="color: #ffffff"></i>
+          <h3>Hello, sign in</h3>
+          <button class="sidebar__btn" onclick="showSidebar()">
+            <i class="fa-solid fa-xmark fa-2xl" style="color: #fff"></i>
+          </button>
+        </div>
+        <ul class="sidebar__wrapper">
+          <li>
+            <span class="sidebar__title">Digital Content & Devices</span>
+          </li>
+          <li>
+            <a href="#">Amazon Music</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li>
+            <a href="#">Kindle E-readers & Books</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li>
+            <a href="#">Amazon Appstore</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li>
+            <span class="sidebar__title">Shop by Department</span>
+          </li>
+          <li>
+            <a href="#">Electronics</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li>
+            <a href="#">Computers</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li>
+            <a href="#">Smart Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li>
+            <a href="#">Arts & Crafts</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li>
+            <a href="#">See all</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li>
+            <span class="sidebar__title">Programs & Features</span>
+          </li>
+          <li>
+            <a href="#">Gift Cards</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li>
+            <a href="#">Shop By Interest</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li>
+            <a href="#">Amazon Live</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li>
+            <a href="#">International Shopping</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li>
+            <a href="#">See all</a>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li>
+            <span>Help & Settings</span>
+          </li>
+          <li>
+            <a href="#">Your Account</a>
+          </li>
+          <li>
+            <a href="#">English</a>
+          </li>
+        </ul>
+      </div>
+      <!---------- Location ---------->
+      <div class="location">
+        <div>
+          <p>Choose your location</p>
+          <button onclick="closeLocation()">
+            <i class="fa-solid fa-xmark fa-xl"></i>
+          </button>
+        </div>
+        <div class="location__wrapper">
+          <p>
+            Delivery options and delivery speeds may vary for different
+            locations
+          </p>
+          <button class="location__sign">Sign in to see your addresses</button>
+          <p class="location__zip">or enter a US zip code</p>
+          <form>
+            <input type="text" />
+            <button>Apply</button>
+          </form>
+          <p class="location__zip">or ship outside the US</p>
+          <select name="country" id="country">
+            <option value="1">Uzbekistan</option>
+            <option value="1">United Kingdom</option>
+            <option value="1">Russian Federation</option>
+            <option value="1">Turkey</option>
+            <option value="1">Portugal</option>
+          </select>
+          <button class="location__done">Done</button>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script src="./index.js"></script>
+</html>
